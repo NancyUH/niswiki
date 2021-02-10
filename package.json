@@ -1,0 +1,22 @@
+{
+  "name": "niswiki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/docsify serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kogepanh/niswiki.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kogepanh/niswiki/issues"
+  },
+  "homepage": "https://github.com/kogepanh/niswiki#readme",
+  "dependencies": {
+    "docsify-cli": "^4.4.2"
+  }
+}
