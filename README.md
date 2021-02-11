@@ -9,7 +9,7 @@ npm -v
 
 # Git Command
 git clone https://github.com/kogepanh/niswiki/
-git pull origin develop
+git pull origin 
 git checkout -b feature/#ticket
 git push origin feature/#ticket
 
