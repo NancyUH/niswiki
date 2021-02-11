@@ -1,0 +1,14 @@
+name: Pull Request Develop Branch
+on:
+  pull_request:
+    branches: develop
+jobs:
+  Build:
+    runs-on: ubuntu-
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+          architecture: 'x64'
+      - run: python create_sidebar.py
