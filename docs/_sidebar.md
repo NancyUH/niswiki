@@ -1,6 +1,9 @@
-# NISLAB Wiki
-
-- [Home](/)
-- [過去の卒論・修論](/all-thesis)
-- [Guidance](/guidance)
-  - [Tex Cloud](/guidance/tex-cloud.md)
+* [研究室ガイダンス](/研究室ガイダンス/README)
+  * [Cloud-Latex](/研究室ガイダンス/Cloud-Latex/README)
+* [就職活動](/就職活動/README)
+  * 2021卒
+    * [kishida](/就職活動/2021卒/kishida/README)
+      * [mixi](/就職活動/2021卒/kishida/mixi/README)
+      * [aws](/就職活動/2021卒/kishida/aws/README)
+* [thesis](/thesis/README)
+  * [卒論・修論一覧](/thesis/卒論・修論一覧/README)
