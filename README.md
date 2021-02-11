@@ -7,7 +7,7 @@
 git --version
 npm -v
 
-# Clone Project
+# Git Command
 git clone https://github.com/kogepanh/niswiki/
 git pull origin develop
 git checkout -b feature/#ticket
@@ -19,3 +19,7 @@ npm install
 # Run Local Server
 npm start
 ```
+
+## 補足
+
+`/docs/.nojekyll` は、GitHub Pages において、アンダースコア `_` から始まるファイルを無視しないようにするために必要なファイル
