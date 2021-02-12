@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/docsify serve docs",
-    "format": "./node_modules/.bin/prettier --write 'docs/*.html' 'docs/**/*.md'"
+    "format": "./node_modules/.bin/prettier --write 'docs/**/*.{md,html}'"
   },
   "husky": {
     "hooks": {
