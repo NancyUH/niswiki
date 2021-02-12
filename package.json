@@ -9,7 +9,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "format"
+      "pre-commit": "npm format"
     }
   },
   "repository": {
