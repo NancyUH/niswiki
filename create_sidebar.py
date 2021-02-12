@@ -5,12 +5,12 @@ sidebar_file = open(f"{root_dir}/_sidebar.md", 'w')
 
 
 def is_exist_readme(path):
-    path = f"{root_dir}/{path}"
+    path = root_dir + '/' + path
     return os.path.isfile(f"{path}/README.md")
 
 
 def search_dir(path):
-    root_path = f"{root_dir}/{path}"
+    root_path = root_dir + '/' + path
     files = [d for d in os.listdir(
         root_path) if os.path.isdir(os.path.join(root_path, d))]
 
