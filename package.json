@@ -7,6 +7,11 @@
     "start": "./node_modules/.bin/docsify serve docs",
     "format": "./node_modules/.bin/prettier --write 'docs/*.html' 'docs/**/*.md'"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "format"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kogepanh/niswiki.git"
@@ -21,10 +26,5 @@
     "docsify-cli": "^4.4.2",
     "husky": "^5.0.9",
     "prettier": "^2.2.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "format"
-    }
   }
 }
