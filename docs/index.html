@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NISLAB Wiki</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css"
+    />
+    <style type="text/css">
+      .sidebar img {
+        max-width: 60%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app">Loading...</div>
+    <script>
+      window.$docsify = {
+        name: 'NISLAB Wiki',
+        logo: '/_media/logo-dark.svg',
+        repo: '',
+        auto2top: true,
+        loadSidebar: true,
+        alias: {
+          '/.*/_sidebar.md': '/_sidebar.md',
+        },
+        routerMode: 'history',
+      };
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  </body>
+</html>
