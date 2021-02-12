@@ -1,9 +1,10 @@
 - [研究室ガイダンス](/研究室ガイダンス/README)
-  - [Cloud-Latex](/研究室ガイダンス/Cloud-Latex/README)
+  - [LaTexの使い方](/研究室ガイダンス/LaTexの使い方/README)
+- [研究・論文](/研究・論文/README)
+  - [卒論・修論作成手順](/研究・論文/卒論・修論作成手順/README)
+  - [卒論・修論一覧](/研究・論文/卒論・修論一覧/README)
 - [就職活動](/就職活動/README)
   - 2021卒
     - [kishida](/就職活動/2021卒/kishida/README)
       - [mixi](/就職活動/2021卒/kishida/mixi/README)
       - [aws](/就職活動/2021卒/kishida/aws/README)
-- [thesis](/thesis/README)
-  - [卒論・修論一覧](/thesis/卒論・修論一覧/README)
