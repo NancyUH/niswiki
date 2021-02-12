@@ -20,3 +20,5 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
       - name: Deploy to AWS S3
         run: aws s3 sync ./docs/ s3://${{ secrets.PROD_AWS_S3_BUCKET }} --delete
+      - name: Clear Cache for Cloudfront
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.PROD_AWS_CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
