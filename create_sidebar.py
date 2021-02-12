@@ -20,9 +20,9 @@ def search_dir(path):
             search_path = path + '/' + file
             step = '  ' * (search_path.count('/') - 1)
             if is_exist_readme(search_path):
-                sidebar_file.write(f"{step}* [{file}]({search_path}/README)\n")
+                sidebar_file.write(f"{step}- [{file}]({search_path}/README)\n")
             else:
-                sidebar_file.write(f"{step}* {file}\n")
+                sidebar_file.write(f"{step}- {file}\n")
             search_dir(search_path)
 
 
