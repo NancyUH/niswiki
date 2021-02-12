@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/docsify serve docs",
-    "format": "./node_modules/.bin/prettier --write 'docs/**/*.{md,html}'"
+    "start": "npm run format && npm run server",
+    "server": "./node_modules/.bin/docsify serve docs",
+    "format": "./node_modules/.bin/prettier --write README.md 'docs/**/*.{md,html}'"
   },
   "husky": {
     "hooks": {
