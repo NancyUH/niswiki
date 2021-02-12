@@ -2,6 +2,7 @@ import os
 
 root_dir = "docs"
 sidebar_file = open(f"{root_dir}/_sidebar.md", 'w')
+toppage_file = open(f"{root_dir}/README.md", 'a')
 
 
 def is_exist_readme(path):
@@ -21,14 +22,18 @@ def search_dir(path):
             step = '  ' * (search_path.count('/') - 1)
             if is_exist_readme(search_path):
                 sidebar_file.write(f"{step}- [{file}]({search_path}/README)\n")
+                toppage_file.write(f"{step}- [{file}]({search_path}/README)\n")
             else:
                 sidebar_file.write(f"{step}- {file}\n")
+                toppage_file.write(f"{step}- {file}\n")
             search_dir(search_path)
 
 
 def main():
+    toppage_file.write('\n## 目次\n\n')
     search_dir('')
     sidebar_file.close()
+    toppage_file.close()
 
 
 if __name__ == "__main__":

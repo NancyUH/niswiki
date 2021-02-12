@@ -1,24 +1,6 @@
-# niswiki
+# NISLAB Wiki
 
-Doshisha University Network Information Systems Lab. Wiki Site.
+Doshisha University Network Information Systems Lab. Wiki Site.  
+Wiki を編集したい人は、[GitHub](https://github.com/kogepanh/niswiki) から行ってください。
 
-> <https://nislab.doshisha.ac.jp>
-
-## はじめに
-
-### 想定読者
-
-- Markdown について知っている
-- 開発が活発にされなくなった gitbook-cli の代替を探している
-- 日本語検索に対応している 静的サイトジェネレーター が欲しい
-
-### この記事で得られること
-
-- [docsify](https://github.com/docsifyjs/docsify) の基本的な使い方
-- お手軽なドキュメント作成方法
-
-### この記事で得られないこと
-
-- [公式ドキュメント](https://docsify.js.org/#/)に記載されている細かい仕様
-- [他の静的サイトジェネレーター](https://www.staticgen.com/)について
-- Node.js の環境準備方法
+> 研究室サイトは <https://nislab.doshisha.ac.jp>
