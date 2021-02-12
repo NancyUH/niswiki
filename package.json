@@ -24,7 +24,7 @@
   },
   "husky": {
     "hooks": {
-      "precommit": "format"
+      "pre-commit": "format"
     }
   }
 }
