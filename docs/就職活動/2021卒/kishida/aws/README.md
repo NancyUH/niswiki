@@ -86,4 +86,4 @@ ssh の公開鍵と、サーバの URL をもらえるので、ログインし�
 
 ## 添付
 
-[ES](./AWS-ES.docx)
+[ES (word file)](./AWS-ES.docx)
