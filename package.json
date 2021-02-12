@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/docsify serve docs"
+    "start": "./node_modules/.bin/docsify serve docs",
+    "format": "./node_modules/.bin/prettier --write 'docs/*.html' 'docs/**/*.md'"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,13 @@
   },
   "homepage": "https://github.com/kogepanh/niswiki#readme",
   "dependencies": {
-    "docsify-cli": "^4.4.2"
+    "docsify-cli": "^4.4.2",
+    "husky": "^5.0.9",
+    "prettier": "^2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "format"
+    }
   }
 }
