@@ -4,6 +4,9 @@
 
 ```zsh
 # Check Version
+brew -v
+brew update
+brew upgrade
 git --version
 npm -v
 
