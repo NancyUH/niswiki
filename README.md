@@ -90,9 +90,6 @@ git remote add upstream https://github.com/Kenny-NISLab/niswiki.git
 
 # 最新のリモートリポジトリを取得
 git pull upstream main
-
-# 自分の作業用のブランチを切る
-git checkout -b ブランチ名
 ```
 
 ページを編集するには、プロジェクトの `content/` 以下を編集します。  
@@ -136,5 +133,5 @@ git push origin "作業開始時に指定したブランチ名"
 ```
 
 GitHub 上で Pull Request する必要があります。  
-先ほどアップロードしたブランチが GitHub 上に反映されていると思いますので、本体リポジトリへプルリクエストを作成して、マージを行ってください。  
+先ほどアップロードしたブランチが GitHub 上に反映されていると思いますので、フォーク元のリポジトリへプルリクエストを作成して、マージを行ってください。  
 マージが完了すると、自動的に <https://wiki.nislab.io/> に反映されます。（GitHub Actions が完了するまで、少々時間がかかります。）
