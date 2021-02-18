@@ -36,6 +36,9 @@ git --version
 
 # Node Package Manager の確認
 npm -v
+
+# Hugo の確認
+hugo version
 ```
 
 特段の理由がない場合、これらをアップデートすることを推奨していますので、下記のコマンドからパッケージのアップデートを行ってください。
