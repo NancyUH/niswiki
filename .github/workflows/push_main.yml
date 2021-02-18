@@ -3,7 +3,7 @@ on:
   push:
     branches: main
 jobs:
-  Auto_Generate_and_Deploy_S3:
+  Build_and_Deploy:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
