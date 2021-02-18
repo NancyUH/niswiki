@@ -3,22 +3,25 @@ on:
   push:
     branches: main
 jobs:
-  Auto_Generate_and_Deploy_S3:
-    runs-on: ubuntu-latest
+  Build_and_Deploy:
+    runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
         with:
-          python-version: '3.x'
-          architecture: 'x64'
-      - name: Auto Generate
-        run: python auto_generate.py
+          submodules: true
+          fetch-depth: 0
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+      - name: Build
+        run: hugo
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
       - name: Deploy to AWS S3
-        run: aws s3 sync ./docs/ s3://${{ secrets.PROD_AWS_S3_BUCKET }} --delete
+        run: aws s3 sync ./public s3://${{ secrets.PROD_AWS_S3_BUCKET }} --delete
       - name: Clear Cache for Cloudfront
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.PROD_AWS_CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"

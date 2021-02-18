@@ -1,0 +1,23 @@
+{{ $currentPage := . }}
+{{ with .Pages }}
+<ul>
+  {{ range . }}
+    <li class="my-1">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    <!-- トップページなら2階層目までのメニュー -->
+    {{ if $currentPage.IsHome }}
+      {{ with .Pages }}
+      <ul>
+        {{ range . }}
+          <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</ul>
+<hr />
+{{ end }}

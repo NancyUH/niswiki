@@ -1,0 +1,10 @@
+<div class="col-12 col-md-9 col-xl-8">
+  <main role="main">
+    <div class="p-3 main--content">
+      {{ partial "breadcrumb.html" . }}
+      <h1>{{ .Title }}</h1>
+      {{ partial "pagelist.html" . }}
+      <p>{{ .Content }}</p>
+    </div>
+  </main>
+</div>
