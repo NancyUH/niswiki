@@ -1,0 +1,14 @@
+baseURL = "/"
+languageCode = "ja"
+hasCJKLanguage = "true"
+title = "NISLAB Wiki"
+pygmentsCodeFences = true
+
+[params]
+  customCSS = ["/css/syntax.css"]
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false

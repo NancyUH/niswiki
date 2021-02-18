@@ -1,0 +1,11 @@
+{{ define "main" }}
+  {{ partial "header.html" . }}
+  <div class="container-fluid">
+    <div class="row flex-xl-nowrap">
+      {{ partial "sidebar.html" . }}
+      {{ partial "main.html" . }}
+      {{ partial "outlinebar.html" . }}
+    </div>
+  </div>
+  {{ partial "footer.html" . }}
+{{ end }}

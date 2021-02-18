@@ -1,0 +1,39 @@
+<div class="d-none d-md-block col-md-3 col-xl-2 border-right bg--sidebar">
+  <div class="sticky-top">
+    <section aria-label="左サイドバー">
+      <div class="p-3 sidebar--left">
+        <!-- セクション -->
+        <ul class="list-unstyled sidebar--left--h1">
+          {{ range .Site.Sections }}
+            <li class="my-1">
+              <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
+            <!-- サブセクション -->
+            {{ with .Pages }}
+              <ul class="list-unstyled ml-3">
+                {{ range . }}
+                <li class="my-1">
+                  <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </li>
+                <!-- サブサブセクション -->
+                {{ with .Pages }}
+                <ul class="list-unstyled ml-3">
+                  {{ range . }}
+                  <li class="my-1">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                  </li>
+                  {{ end }}
+                </ul>
+                {{ end }}
+                <!-- ここまでサブサブセクション -->
+                {{ end }}
+              </ul>
+            {{ end }}
+            <!-- ここまでサブセクション -->
+          {{ end }}
+        </ul>
+        <!-- ここまでセクション -->
+      </div>
+    </section>
+  </div>
+</div>
