@@ -27,7 +27,7 @@ Terminal から下記のコマンドを叩いて、必要なパッケージが�
 
 > 下記の 3 つがインストールされていない人は、MacOS 用のパッケージ管理システムである Homebrew を用いてインストールを行ってください。
 
-```zsh
+```sh
 # Homebrew の確認
 brew -v
 
@@ -42,7 +42,7 @@ npm -v
 
 > 下記のコマンドの実行には数分かかることがありますので、安定した回線で実行してください
 
-```zsh
+```sh
 # Homebrew のアップデート
 brew update
 
@@ -61,7 +61,7 @@ brew upgrade
 GitHub で管理されているプロジェクトをローカルに落として、適宜編集を行います。  
 必要なパッケージのインストールも行います。
 
-```zsh
+```sh
 # デスクトップへディレクトリを移動
 cd
 cd Desktop/
@@ -81,25 +81,34 @@ npm install
 できれば、GitHub Issue を用いて管理すべきですが、必須ではありませんので、興味のある人のみ適宜調べて作業してください。  
 基本的には、各自でブランチを切ってもらい、作業をおこない、GitHub 上でマージしてもらう形になるかと思います。
 
-```zsh
+```sh
+# フォーク元のリモートリポジトリを upstream として設定
+git remote add upstream https://github.com/Kenny-NISLab/niswiki.git
+
 # 最新のリモートリポジトリを取得
-git pull origin main
+git pull upstream main
 
 # 自分の作業用のブランチを切る
 git checkout -b ブランチ名
 ```
 
-ページを編集するには、プロジェクトの `docs/` 以下を編集します。  
-`docs/` より下層のフォルダに作成した `README.md` が、自動的にメニューとしてサイドバーに追加されます。また、トップページとなるのは `docs/index.md` で、目次は公開時に自動的に追記される箇所ですので、記述は不要です。  
+ページを編集するには、プロジェクトの `content/` 以下を編集します。  
+記事を追加する場合は、以下のコマンドから追加できます。
+
+```sh
+# content/guidance/ 配下に xx という記事を追加する場合
+hugo new guidance/xx/_index.md
+```
+
 記事は `Markdown` で記述します。 記法については、 [Qiita の記事](https://qiita.com/tbpgr/items/989c6badefff69377da7) などを参考にしてください。  
 編集した NISLAB Wiki については、下記コマンドを実行することで、ローカルホストで実行することができます。
 
 ```zsh
 # ローカルホストで実行
-npm start
+hugo server
 
 # 下記アドレスを Chrome 等に貼り付けて表示確認できます
-http://localhost:3000
+http://localhost:1313
 
 # 実行を止めたい場合は
 Control + C
@@ -125,13 +134,4 @@ git push origin "作業開始時に指定したブランチ名"
 
 GitHub 上で Pull Request する必要があります。  
 先ほどアップロードしたブランチが GitHub 上に反映されていると思いますので、本体リポジトリへプルリクエストを作成して、マージを行ってください。  
-マージが完了すると、自動的にサイドバーや目次が作成され、 <https://wiki.nislab.io/> に反映されます。（GitHub Actions が完了するまで、少々時間がかかります。）
-
-## 仕組み
-
-[この Wiki](https://wiki.nislab.io/) は、 [docsify](https://docsify.js.org/#/) を用いて開発されています。
-
-> Docsify は、ドキュメント作成向けの SSG です。
-> 超シンプルで HTML すらジェネレートせずに、 Markdown ファイル読み込んで Web サイトに表示します。
-
-NISLAB Wiki は、git で管理されており、メインブランチへのマージをトリガーとして自動的にデプロイされます。
+マージが完了すると、自動的に <https://wiki.nislab.io/> に反映されます。（GitHub Actions が完了するまで、少々時間がかかります。）
