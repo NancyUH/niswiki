@@ -1,9 +1,0 @@
-name: Merge Main Branch
-on:
-  push:
-    branches: main
-jobs:
-  Build_and_Deploy:
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout@v2
