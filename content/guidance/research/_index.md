@@ -51,7 +51,7 @@ draft: false
 
 <http://next49.hatenadiary.jp/entry/20091209/p2>
 
-### 文章コミュニケーション・リファクタリング！
+### 文章コミュニケーション・リファクタリング
 
 <http://www.atmarkit.co.jp/ait/articles/1103/08/news099.html>
 
