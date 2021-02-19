@@ -4,7 +4,7 @@ draft: false
 ---
 
 Cloud LaTex を利用します  
-[Cloud Latex サイト](https://www.google.com/url?q=https%3A%2F%2Fcloudlatex.io%2Fja&sa=D&sntz=1&usg=AFQjCNEZM4RtnMFAa2F90DCCe9-xWVmKHQ)
+[Cloud Latex サイト](https://cloudlatex.io/ja)
 
 新規登録をしてください．
 
@@ -114,7 +114,7 @@ Appstore で「スケッチ風ドロー」というアプリをインストー�
 
 ##### 参考リンク 1
 
-<http://d.hatena.ne.jp/sxhxtxa/20090128/1233165255>
+[Macでepsを作るには](http://d.hatena.ne.jp/sxhxtxa/20090128/1233165255)
 
 ##### 【方法 2】
 
@@ -156,7 +156,7 @@ Appstore で「スケッチ風ドロー」というアプリをインストー�
 
 ##### 参考リンク 2
 
-[http://bakedmemo.blogspot.jp/2013/01/homebrewmaxtex.html](http://bakedmemo.blogspot.jp/)
+[Homebrewの前にMacTexを入れてしまった](http://bakedmemo.blogspot.jp/2013/01/homebrewmaxtex.html)
 
 - ps ファイルを eps ファイルに変換
 
@@ -170,7 +170,7 @@ Appstore で「スケッチ風ドロー」というアプリをインストー�
 
 ##### 参考リンク 3
 
-[http://take-mmatthew.hatenablog.com/entry/2015/02/13/194737](http://take-mmatthew.hatenablog.com/)
+[vector形式の図をMacのPowerpointで作成する](https://www.mmatthew.com/entry/2015/02/13/194737)
 
 ## 添付ファイル
 
