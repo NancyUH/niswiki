@@ -112,7 +112,7 @@ Appstore で「スケッチ風ドロー」というアプリをインストー�
 「ファイル」→「書き出し」  
 形式を eps で保存すれば，eps 画像ができます．
 
-##### 参考リンク
+##### 参考リンク 1
 
 <http://d.hatena.ne.jp/sxhxtxa/20090128/1233165255>
 
@@ -154,7 +154,7 @@ Appstore で「スケッチ風ドロー」というアプリをインストー�
   sudo chown -R ユーザ名:admin /usr/local/share/ghostscript
   ```
 
-##### 参考リンク
+##### 参考リンク 2
 
 <http://bakedmemo.blogspot.jp/2013/01/homebrewmaxtex.html>
 
@@ -168,7 +168,7 @@ Appstore で「スケッチ風ドロー」というアプリをインストー�
   で、ps ファイルを eps ファイルに変換できます。  
   この状態で、無駄な余白が削除された状態になります。
 
-##### 参考リンク
+##### 参考リンク 3
 
 <http://take-mmatthew.hatenablog.com/entry/2015/02/13/194737>
 
