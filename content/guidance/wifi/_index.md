@@ -15,7 +15,7 @@ draft: false
   - KE101(2.4GHz)-1
   - KE101(2.4GHz)-2
 - Password
-  - w3.doshisha.ac.jp
+  - [https://pass.nislab.io/](https://pass.nislab.io/) で確認してください
 
 ### KE-105 （チームミーディングの部屋）
 
@@ -23,7 +23,7 @@ draft: false
   - KE115(5.0GHz)
   - KE115(2.4GHz)
 - Password
-  - w3.doshisha.ac.jp
+  - [https://pass.nislab.io/](https://pass.nislab.io/) で確認してください
 
 ## 有線（Ethernet）の設定
 
