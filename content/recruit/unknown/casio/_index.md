@@ -1,5 +1,5 @@
 ---
-title: 'Casio ES'
+title: 'Casio'
 draft: false
 ---
 
