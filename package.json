@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "hugo server --disableFastRender",
     "format": "prettier --write 'content/**/*.{html,md}'"
   },
   "author": "",
