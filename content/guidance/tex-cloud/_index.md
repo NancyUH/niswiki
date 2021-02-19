@@ -31,7 +31,7 @@ Cloud LaTex を利用します
 
 5. main.tex を削除します
 
-   ![ファイルの削除](remove2).png)
+   ![ファイルの削除](remove2.png)
 
 6. 必要なファイルをすべてアップロードします．  
    このサイトの一番下から monthlyPresentation_2017_4.zip をダウンロードして，解凍してください．  
@@ -156,7 +156,7 @@ Appstore で「スケッチ風ドロー」というアプリをインストー�
 
 ##### 参考リンク 2
 
-<http://bakedmemo.blogspot.jp/2013/01/homebrewmaxtex.html>
+[http://bakedmemo.blogspot.jp/2013/01/homebrewmaxtex.html](http://bakedmemo.blogspot.jp/)
 
 - ps ファイルを eps ファイルに変換
 
@@ -170,7 +170,7 @@ Appstore で「スケッチ風ドロー」というアプリをインストー�
 
 ##### 参考リンク 3
 
-<http://take-mmatthew.hatenablog.com/entry/2015/02/13/194737>
+[http://take-mmatthew.hatenablog.com/entry/2015/02/13/194737](http://take-mmatthew.hatenablog.com/)
 
 ## 添付ファイル
 
