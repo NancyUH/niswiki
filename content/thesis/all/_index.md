@@ -1,5 +1,5 @@
 ---
-title: '卒業論文・修士論文一覧'
+title: '卒論・修論一覧'
 draft: false
 ---
 
