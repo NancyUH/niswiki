@@ -1,5 +1,5 @@
 body {
-  font-family: 'Noto Sans JP', 'Open Sans', sans-serif; }
+  font-family: 'Noto Sans JP', sans-serif; }
 
 img {
   max-width: 100%; }
