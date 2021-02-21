@@ -3,6 +3,7 @@ languageCode = "ja"
 hasCJKLanguage = "true"
 title = "NISLAB Wiki"
 pygmentsCodeFences = true
+googleAnalytics = "G-60HW9QLLEN"
 
 [params]
   customCSS = ["/css/syntax.css"]

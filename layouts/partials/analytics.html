@@ -1,0 +1,7 @@
+{{ if not .Site.IsServer }}
+{{ with .Site.GoogleAnalytics }}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>{{ $built := resources.Get "js/analytics.js" }}
+<script src="{{ $built.RelPermalink }}"></script>
+{{ end }}
+{{ end }}
