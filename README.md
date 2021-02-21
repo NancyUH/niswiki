@@ -10,7 +10,7 @@ Network Information Systems Lab Wiki
 
 1. [NISLAB Wiki の編集手順](#nislab-wiki-%E3%81%AE%E7%B7%A8%E9%9B%86%E6%89%8B%E9%A0%86)
    1. [環境構築](#%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89)
-   2. [プロジェクトのフォーク・クローン](#%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%B3)
+   2. [プロジェクトのフォーク・クローン](#%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AE%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%B3)
    3. [ページの追加・編集](#%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E8%BF%BD%E5%8A%A0%E7%B7%A8%E9%9B%86)
    4. [編集完了後の公開手順](#%E7%B7%A8%E9%9B%86%E5%AE%8C%E4%BA%86%E5%BE%8C%E3%81%AE%E5%85%AC%E9%96%8B%E6%89%8B%E9%A0%86)
 2. [仕組み](#%E4%BB%95%E7%B5%84%E3%81%BF)
@@ -22,10 +22,21 @@ Windows を使用している人は、適宜調べながら作業を行ってく
 
 ### 環境構築
 
+これらがインストールされている必要があります。
+
+- Homebrew
+- git
+- Node
+- Hugo
+
 Terminal から下記のコマンドを叩いて、必要なパッケージがインストールされているか確認してください。  
 バージョンが表示されればインストールされているので問題ありません。
 
 > 下記の 3 つがインストールされていない人は、MacOS 用のパッケージ管理システムである Homebrew を用いてインストールを行ってください。
+>
+> - git がインストールされていない場合は `brew install git`
+> - Node がインストールされていない場合は [Qiita の記事](https://qiita.com/kyosuke5_20/items/c5f68fc9d89b84c0df09) を参考に。
+> - Hugo がインストールされていない場合は `brew install hugo`
 
 ```sh
 # Homebrew の確認
@@ -57,7 +68,7 @@ brew upgrade
 
 > GitHub で ssh 接続できるようにしておくと何かと便利ですので、 [Qiita の記事](https://qiita.com/shizuma/items/2b2f873a0034839e47ce) などを参考にしておくと良いかも。
 
-### プロジェクトのフォーク
+### リポジトリのフォーク・クローン
 
 > こちらの [Qiita の記事](https://qiita.com/YumaInaura/items/acff806290c8953d3185) を参考にしていただくことで簡単にフォークすることができます。
 
@@ -105,7 +116,7 @@ hugo new guidance/xx/_index.md
 
 ```zsh
 # ローカルホストで実行
-hugo server
+npm start
 
 # 下記アドレスを Chrome 等に貼り付けて表示確認できます
 http://localhost:1313
@@ -132,6 +143,17 @@ git commit -m "何を変更したのかコメントとしてここに記述"
 git push origin "作業開始時に指定したブランチ名"
 ```
 
-GitHub 上で Pull Request する必要があります。  
+GitHub 上で元のリポジトリに Pull Request する必要があります。  
 先ほどアップロードしたブランチが GitHub 上に反映されていると思いますので、フォーク元のリポジトリへプルリクエストを作成して、マージを行ってください。  
-マージが完了すると、自動的に <https://wiki.nislab.io/> に反映されます。（GitHub Actions が完了するまで、少々時間がかかります。）
+マージが完了すると CI/CD が走り、自動的に <https://wiki.nislab.io/> に反映されます。
+
+## 仕組み
+
+[NISLAB Wiki](https://wiki.nislab.io/) は [Hugo](https://gohugo.io) を用いて開発されています。  
+Hugo は Go をベースとした SSG であり、基本的に HTML/CSS の知識さえあれば自由に Web サイトを構築することが可能です。  
+Go をベースとしているので、様々な OS 上で動作するだけでなく、Docker 上でも使用できます。
+
+CI/CD に関しては、aws Amplify を GitHub と連携させることで、main ブランチにマージされる度にビルド・デプロイが実行されます。  
+aws Amplify はコンテンツが更新される度に CDN キャッシュが無効化されるため、ページを高速に表示することができるだけでなく、更新されたコンテンツが即時に反映されます。
+
+ページのアクセス元解析の観点から、[Google Analytics](https://analytics.google.com/) も組み込まれています。
