@@ -1,11 +1,11 @@
-name: Pull Request Develop Branch
+name: Pull Request
 on:
   pull_request:
     branches: 
       - main
       - develop
 jobs:
-  Build:
+  Build-Check:
     runs-on: ubuntu-latest
     strategy:
       matrix:
