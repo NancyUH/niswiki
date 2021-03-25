@@ -1,7 +1,7 @@
 {
   "name": "niswiki",
   "version": "1.0.0",
-  "description": "",
+  "description": "NISLAB Wiki",
   "main": "index.js",
   "scripts": {
     "start": "hugo server --disableFastRender",
