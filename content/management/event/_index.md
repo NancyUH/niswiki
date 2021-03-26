@@ -1,5 +1,5 @@
 ---
-title: 'イベント班の仕事'
+title: 'イベント班'
 draft: false
 ---
 
