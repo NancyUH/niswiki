@@ -1,5 +1,5 @@
 ---
-title: '物品管理'
+title: '物品班'
 draft: false
 ---
 
