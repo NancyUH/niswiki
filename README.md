@@ -161,3 +161,6 @@ aws Amplify はコンテンツが更新される度に CDN キャッシュが無
 ## Contributors
 
 - ROkunishi
+- TTsukasaki
+- RSugimoto
+- KHosono
