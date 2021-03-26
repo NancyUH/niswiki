@@ -1,5 +1,5 @@
 ---
-title: "広報班の仕事内容について"
+title: "広報班"
 draft: false
 ---
 
