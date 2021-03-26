@@ -159,3 +159,5 @@ aws Amplify はコンテンツが更新される度に CDN キャッシュが無
 ページのアクセス元解析の観点から、[Google Analytics](https://analytics.google.com/) も組み込まれています。
 
 ## Contributors
+
+- ROkunishi
