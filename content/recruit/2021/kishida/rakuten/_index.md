@@ -1,5 +1,5 @@
 ---
-title: '楽天'
+title: 'Rakuten'
 draft: false
 ---
 
@@ -25,6 +25,8 @@ draft: false
 ### ES 提出
 
 内容については書くのが大変なものはないのですが、記入するページが、見にくくかった記憶があります。（プログラミング言語の経験欄とか）
+
+> [ES 参照](https://www.dropbox.com/sh/24fnut6yvekywg9/AAAjqzAaQq1o2VqPcP8YQSgta?dl=0)
 
 ### コーディングテスト
 
