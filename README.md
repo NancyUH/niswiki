@@ -157,3 +157,5 @@ CI/CD に関しては、aws Amplify を GitHub と連携させることで、mai
 aws Amplify はコンテンツが更新される度に CDN キャッシュが無効化されるため、ページを高速に表示することができるだけでなく、更新されたコンテンツが即時に反映されます。
 
 ページのアクセス元解析の観点から、[Google Analytics](https://analytics.google.com/) も組み込まれています。
+
+## Contributors
