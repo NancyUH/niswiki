@@ -20,9 +20,9 @@ draft: false
 
 ## 一言
 
-ひとまず、自分の興味のある分野の論文は上記のサイトで論文を検索して、読むことをお勧めします．  
+ひとまず，自分の興味のある分野の論文は上記のサイトで論文を検索して，読むことをお勧めします．  
 学内の IP アドレスからサイトのアクセスすると，IEEE など多くの論文を無料で取得可能となります．  
-お金がかかる論文は、佐藤先生にお願いすると取り寄せてもらえます。
+お金がかかる論文は，佐藤先生にお願いすると取り寄せてもらえます．
 
 ## 【必読】
 
@@ -37,7 +37,7 @@ draft: false
 ## 【任意】
 
 - [どうやったら質問を思いつけるの？](http://next49.hatenadiary.jp/entry/20100211/p4)
-- [「いま、オレ何したいの？」という状態になったら](http://next49.hatenadiary.jp/entry/20100129/p1)
+- [「いま，オレ何したいの？」という状態になったら](http://next49.hatenadiary.jp/entry/20100129/p1)
 - [卒業研究・修士研究時の悪循環を防ごう](http://next49.hatenadiary.jp/entry/20081019/p2)
 - [論文に死んでも書いてはいけない言葉３０](http://next49.hatenadiary.jp/entry/20120103/p2)
 
@@ -46,6 +46,6 @@ draft: false
 - [いきいき研究室増産プロジェクト　大学研究室の歩き方講座](http://www.ikiiki-lab.org/category/arukikata/)
 - [研究室でのアピールの仕方](http://next49.hatenadiary.jp/entry/20100430/p1)
 - [どうやったら卒研を失敗できるか：他人の話を聞くのをやめる](http://next49.hatenadiary.jp/entry/20080214/p1)
-- [「このテーマに興味がある」というだけでは、何故いけないんですか？](http://next49.hatenadiary.jp/entry/20090320/p2)
+- [「このテーマに興味がある」というだけでは，何故いけないんですか？](http://next49.hatenadiary.jp/entry/20090320/p2)
 - [「何がわからないか」がわからないをそのままにしておかない技術モドキ](http://next49.hatenadiary.jp/entry/20130217/p1)
 - [防御的研究室生活の手引き](http://next49.hatenadiary.jp/entry/20100207/p2)
