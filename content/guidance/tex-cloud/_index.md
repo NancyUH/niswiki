@@ -114,7 +114,7 @@ Appstore で「スケッチ風ドロー」というアプリをインストー�
 
 ##### 参考リンク 1
 
-[Macでepsを作るには](http://d.hatena.ne.jp/sxhxtxa/20090128/1233165255)
+[Mac で eps を作るには](http://d.hatena.ne.jp/sxhxtxa/20090128/1233165255)
 
 ##### 【方法 2】
 
@@ -156,7 +156,7 @@ Appstore で「スケッチ風ドロー」というアプリをインストー�
 
 ##### 参考リンク 2
 
-[Homebrewの前にMacTexを入れてしまった](http://bakedmemo.blogspot.jp/2013/01/homebrewmaxtex.html)
+[Homebrew の前に MacTex を入れてしまった](http://bakedmemo.blogspot.jp/2013/01/homebrewmaxtex.html)
 
 - ps ファイルを eps ファイルに変換
 
@@ -170,7 +170,7 @@ Appstore で「スケッチ風ドロー」というアプリをインストー�
 
 ##### 参考リンク 3
 
-[vector形式の図をMacのPowerpointで作成する](https://www.mmatthew.com/entry/2015/02/13/194737)
+[vector 形式の図を Mac の Powerpoint で作成する](https://www.mmatthew.com/entry/2015/02/13/194737)
 
 ## 添付ファイル
 
