@@ -17,7 +17,7 @@ draft: false
 - Password
   - [https://pass.nislab.io/](https://pass.nislab.io/) で確認してください
 
-### KE-105 （チームミーディングの部屋）
+### KE-115 （チームミーディングの部屋）
 
 - SSID
   - KE115(5.0GHz)
