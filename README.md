@@ -100,7 +100,7 @@ npm install
 git remote add upstream https://github.com/Kenny-NISLab/niswiki.git
 
 # 最新のリモートリポジトリを取得
-git pull upstream main
+git pull upstream develop
 ```
 
 ページを編集するには、プロジェクトの `content/` 以下を編集します。  
