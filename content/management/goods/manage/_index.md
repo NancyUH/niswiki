@@ -1,5 +1,5 @@
 ---
-title: '物品管理について'
+title: '購入物品の取扱い'
 draft: false
 ---
 
